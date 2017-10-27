@@ -41,11 +41,11 @@ const culdevateColors = [
 storiesOf('Colors', module)
   .add('All colors', () =>
     (
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', width: '600px', 'flex-direction': 'column', 'align-items': 'center', color: '#595959', 'font-family': 'Noto Sans'  }}>
         {culdevateColors.map(({ descr, color }) => (
-          <div key={descr} style={{ width: '150px', height: '150px' }}>
+          <div key={descr} style={{ width: '250px', height: '250px' }}>
             <h2>{descr}: {color}</h2>
-            <div style={{ 'background-color': `${color}`, height: '100px', width: '100px' }}></div>
+            <div style={{ 'background-color': `${color}`, height: '100px', width: '100px', border: 'solid 2px #eee' }}></div>
           </div>
         ))}
       </div>
@@ -63,7 +63,7 @@ storiesOf('Button', module)
   .add('Lit Button', () => <LitButton />);
 
 storiesOf('CuldevateLogo', module)
-  .add('with text', () => <div><CuldevateLogo /><h1>Cultivate better developers together</h1></div>);
+  .add('with text', () => <div><CuldevateLogo /><H1 primary>Cultivate better developers together</H1></div>);
 
 storiesOf('Loading Icon', module)
   .add('Cube folding loading icon', () => <LoadingIcon />);
