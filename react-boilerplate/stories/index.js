@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
+import H1 from '../app/components/H1';
 import LgtmButton from '../app/components/LgtmButton';
 import ShareButton from '../app/components/ShareButton';
 import LitButton from '../app/components/LitButton';
@@ -21,13 +22,14 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 const culdevateColors = [
   { descr: 'Cudos/Lit Orange', color: '#f7baa3' },
   { descr: 'Cudos/Lit Orange Hovered', color: '#cc9885' },
+  { descr: 'Header Blue', color: '#58a1e3' },
   { descr: 'Share Blue', color: '#83b9ff' },
-  { descr: 'Share Blue Hovered', color:'#6b98d2' },
+  { descr: 'Share Blue Hovered', color: '#6b98d2' },
   { descr: 'Culdevate Blue', color: '#b6c4d6' },
   { descr: 'Culdevate Teal', color: '#4c768a' },
   { descr: 'Comment Gray', color: '#a0a0a0' },
   { descr: 'Comment Gray Hovered', color: '#757575' },
-  { descr: 'Normal Gray Text', color: '#555' },
+  { descr: 'Normal Gray Text', color: '#595959' },
   { descr: 'Lighter Gray Text', color: '#aaa' },
   { descr: 'White Background/Text', color: '#fff' },
   { descr: 'Loading Green', color: '#d1eced' },
@@ -41,7 +43,7 @@ storiesOf('Colors', module)
     (
       <div style={{ display: 'flex' }}>
         {culdevateColors.map(({ descr, color }) => (
-          <div key={descr} style={{ width: '150px', height: '150px'}}>
+          <div key={descr} style={{ width: '150px', height: '150px' }}>
             <h2>{descr}: {color}</h2>
             <div style={{ 'background-color': `${color}`, height: '100px', width: '100px' }}></div>
           </div>
@@ -49,6 +51,9 @@ storiesOf('Colors', module)
       </div>
     )
   );
+
+storiesOf('Headers', module)
+  .add('H1', () => <div><H1>// cultivate better developers</H1><H1 primary>culdevate(developers);</H1></div>)
 
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
