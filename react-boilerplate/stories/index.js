@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 import H1 from '../app/components/H1';
+import H2 from '../app/components/H2';
 import LgtmButton from '../app/components/LgtmButton';
 import ShareButton from '../app/components/ShareButton';
 import LitButton from '../app/components/LitButton';
@@ -54,10 +55,9 @@ storiesOf('Colors', module)
 
 storiesOf('Headers', module)
   .add('H1', () => <div><H1>// cultivate better developers</H1><H1 primary>culdevate(developers);</H1></div>)
+  .add('H2', () => <div><H2>// Normal H2 Text</H2><H2 primary>Primary H2 Text</H2></div>);
 
 storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>)
   .add('LGTM button', () => <LgtmButton />)
   .add('Share button', () => <ShareButton />)
   .add('Lit Button', () => <LitButton />);
@@ -77,7 +77,6 @@ storiesOf('Comments', module)
 storiesOf('Profile Components', module)
   .add('Progress Bar', () => <ProgressBar progressPercentage={50} />)
   .add('Trowel Story', () => <TrowelStorybook />);
-
 
 storiesOf('Code Editor', module)
   .add('React Ace Editor', () => <CodeEditor />);
