@@ -17,6 +17,7 @@ import Comment from '../app/components/Comment';
 import ProgressBar from '../app/components/ProgressBar';
 import TrowelStorybook from '../app/components/TrowelStorybook';
 import CodeEditor from '../app/components/CodeEditor';
+import CommentDraft from '../app/components/CommentDraft';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -80,3 +81,6 @@ storiesOf('Profile Components', module)
 
 storiesOf('Code Editor', module)
   .add('React Ace Editor', () => <CodeEditor />);
+
+storiesOf('Drafts', module)
+  .add('Comment Draft', () => <CommentDraft />);
