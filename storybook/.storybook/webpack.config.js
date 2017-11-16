@@ -8,7 +8,7 @@ module.exports = function(config, env) {
     test: /\.tsx?$/,
     exclude: /node_modules/,
     include: [/stories/, /components/],
-    loader: 'awesome-typescript-loader',
+    loader: 'awesome-typescript-loader'
   });
 
   config.module.rules.push({

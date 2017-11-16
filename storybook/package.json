@@ -1,10 +1,11 @@
 {
   "name": "culdevate-storybook",
   "version": "1.0.0",
-  "description": "Storybook for Culdevate Reusable, Tested Components",
   "main": "dist/index.js",
+  "description": "Storybook for Culdevate Reusable, Tested Components",
   "scripts": {
     "start": "yarn run storybook",
+    "build": "tsc",
     "test": "jest --coverage",
     "ci-test": "yarn lint && yarn test",
     "lint": "tslint --project ./tslint.json",
@@ -37,22 +38,27 @@
     "enzyme-adapter-react-16": "^1.0.3",
     "enzyme-to-json": "^3.2.1",
     "jest": "^21.2.1",
+    "jest-styled-components": "^4.9.0",
     "react-test-renderer": "^16.0.0",
     "regenerator-runtime": "^0.11.0",
     "ts-jest": "^21.1.4",
+    "ts-loader": "^3.1.1",
     "tslint": "^5.8.0",
-    "tslint-react": "^3.2.0"
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.1",
+    "webpack": "^2.7.0"
   },
   "dependencies": {
     "@types/classnames": "^2.2.3",
     "@types/react-dom": "^16.0.2",
     "@types/storybook__addon-actions": "^3.0.1",
     "@types/storybook__react": "^3.0.5",
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
+    "jest-cli": "^21.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "styled-components": "^2.2.3",
-    "typescript": "^2.6.1"
+    "styled-components": "^2.2.3"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>jestSetup.js",

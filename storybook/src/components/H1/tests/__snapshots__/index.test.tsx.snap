@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<H1 /> should render correctly 1`] = `
+.c0 {
+  color: #595959;
+  font-size: 2rem;
+  font-family: 'Inconsolata';
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+<h1
+  className="c0"
+/>
+`;
