@@ -45,8 +45,8 @@ const Post: React.SFC<PostProps> = ({
       </StyledPostTitle>
       <StyledAuthorWrapper>
         <div><Img src={authorImg} alt="`${author} profile photo`" defaultIcon="user" round /></div>
-        <p>Alfred Lucero<br/><span>Oct. 17, 2017</span></p>
-        <p className="author-actions"><i className="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+        <p>{author}<br /><span>{dateTime}</span></p>
+        <p className="author-actions"><Icon type="ellipsis-h"/></p>
       </StyledAuthorWrapper>
       <StyledSocialWrapper>
         <Button type="plaintext"><P socialColor="cudos"><Icon type="fire"/> Cudos<br />{cudosCount}</P></Button>
