@@ -3,7 +3,10 @@ import styled, { css } from 'styled-components';
 import { buttonStyle } from './buttonStyles';
 
 export interface StyledButtonProps {
-  round?: boolean
+  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext';
+  disabled?: boolean;
+  round?: boolean;
+  roundColor?: string;
 }
 
 const StyledButton = styled.button`
@@ -23,7 +26,7 @@ const StyledButton = styled.button`
     padding: 1rem;
     border-radius: 100%;
     border: 2px solid #eee;
-    color: #2BAD88;
+    color: ${props.roundColor};
     background-color: #fff;
     cursor: pointer;
     z-index: 1;
@@ -33,7 +36,7 @@ const StyledButton = styled.button`
     &:before {
       content: "";
       position: absolute;
-      background-color: #2BAD88;
+      background-color: ${props.roundColor};
       bottom: 0;
       left: 0;
       right: 0;
@@ -43,8 +46,8 @@ const StyledButton = styled.button`
     }
 
     &:hover {
-      border: 2px solid #2BAD88;
-      background-color: #2BAD88;
+      border: 2px solid ${props.roundColor};
+      background-color: ${props.roundColor};
       color: #fff;
     }
 

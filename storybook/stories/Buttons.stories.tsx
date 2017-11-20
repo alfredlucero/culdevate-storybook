@@ -11,7 +11,9 @@ const stories = storiesOf('Buttons', module);
 stories.add('Plaintext social buttons', () => (
   <div>
     <Button type="plaintext"><P socialColor="cudos"><Icon type="fire"/> Cudos<br />100</P></Button>
+    <br />
     <Button type="plaintext"><P socialColor="comment"><Icon type="comment"/> Comment<br />10</P></Button>
+    <br />
     <Button type="plaintext"><P socialColor="share"><Icon type="share"/> Share<br />5</P></Button>
   </div>
 ));

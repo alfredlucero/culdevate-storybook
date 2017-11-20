@@ -7,6 +7,7 @@ export interface ButtonProps {
   type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext';
   disabled?: boolean;
   round?: boolean;
+  roundColor?: string;
   children?: React.ReactElement<any> | string;
   onClick?: (event: any) => void;
 }
