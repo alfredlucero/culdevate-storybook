@@ -35,7 +35,7 @@ export type IconType =
   | 'instagram'
   | 'laptop'
   | 'level-up'
-  | 'light-bulb-o'
+  | 'lightbulb-o'
   | 'linkedin'
   | 'lock'
   | 'map-marker'
