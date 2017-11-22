@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import { StyledButton } from './StyledButton';
 
 export interface ButtonProps {
-  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext';
+  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext' | 'round';
   disabled?: boolean;
-  round?: boolean;
   roundColor?: string;
   children?: React.ReactElement<any> | string;
   onClick?: (event: any) => void;
@@ -14,10 +13,11 @@ export interface ButtonProps {
 
 const Button: React.SFC<ButtonProps> = ({
   children,
+  ...styledButtonProps
 }) => {
-  
+
   return (
-    <StyledButton {...this.props}>
+    <StyledButton {...styledButtonProps}>
       {children}
     </StyledButton>
   )

@@ -28,9 +28,13 @@ const postTitleStyle = css`
 `;
 
 const postAuthorWrapperStyle = css`
-  padding: 15px 15px 0 15px;
+  padding: 30px 30px 15px 30px;
   display: flex;
   justify-content: flex-start;
+
+  & .author-img {
+    margin-right: 15px;
+  }
 
   & p {
     margin: 0;
@@ -55,6 +59,10 @@ const postAuthorWrapperStyle = css`
 const postSocialWrapperStyle = css`
   display: flex;
   justify-content: space-around;
+
+  & p {
+    font-size: 0.75rem;
+  }
 `;
 
 export {

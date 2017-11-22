@@ -3,24 +3,24 @@ import styled, { css } from 'styled-components';
 import { buttonStyle } from './buttonStyles';
 
 export interface StyledButtonProps {
-  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext';
+  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext' | 'round';
   disabled?: boolean;
-  round?: boolean;
   roundColor?: string;
+  onClick?: (event: any) => void;
 }
 
 const StyledButton = styled.button`
   ${buttonStyle}
 
-  ${(props:StyledButtonProps) => props.round && css`
+  ${(props:StyledButtonProps) => props.type === 'round' && css`
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     font-weight: bold;
     font-size: 2rem;
     padding: 1rem;

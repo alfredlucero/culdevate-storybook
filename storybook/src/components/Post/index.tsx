@@ -44,7 +44,7 @@ const Post: React.SFC<PostProps> = ({
         <a href="`/posts/${id}`">{title}</a>
       </StyledPostTitle>
       <StyledAuthorWrapper>
-        <div><Img src={authorImg} alt="`${author} profile photo`" defaultIcon="user" round /></div>
+        <div className="author-img"><Img src={authorImg} alt="`${author} profile photo`" defaultIcon="user" round /></div>
         <p>{author}<br /><span>{dateTime}</span></p>
         <p className="author-actions"><Icon type="ellipsis-h"/></p>
       </StyledAuthorWrapper>

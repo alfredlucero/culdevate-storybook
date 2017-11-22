@@ -10,6 +10,7 @@ const stories = storiesOf('Buttons', module);
 
 stories.add('Plaintext social buttons', () => (
   <div>
+    <h1 style={{ color: '#595959' }}>{`<Button type="plaintext">{props.children}</Button>`}</h1>
     <Button type="plaintext"><P socialColor="cudos"><Icon type="fire"/> Cudos<br />100</P></Button>
     <br />
     <Button type="plaintext"><P socialColor="comment"><Icon type="comment"/> Comment<br />10</P></Button>
@@ -18,6 +19,19 @@ stories.add('Plaintext social buttons', () => (
   </div>
 ));
   
-stories.add('with some emoji', () => (
-  <button onClick={action('clicked')}>😀 😎 👍 💯</button>
+stories.add('Round Buttons', () => (
+  <div>
+    <h1 style={{ color: '#595959' }}>{`<Button type="round" roundColor?="...">{props.children}</Button>`}</h1>
+    <Button type="round" roundColor="#83b9ff">
+      <Icon type="share" />
+    </Button>
+    <br />
+    <Button type="round" roundColor="#2bad88">
+      <Icon type="thumbs-up" />
+    </Button>
+    <br />
+    <Button type="round" roundColor="#f7baa3">
+      <Icon type="fire" />
+    </Button>
+  </div>
 ));
