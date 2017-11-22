@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import { StyledButton } from './StyledButton';
 
 export interface ButtonProps {
-  type: 'primary' | 'secondary' | 'danger' | 'warning' | 'plaintext' | 'round';
+  type: 'rect' | 'plaintext' | 'round';
+  primary?: boolean;
+  secondary?: boolean;
+  danger?: boolean;
   disabled?: boolean;
   roundColor?: string;
   children?: React.ReactElement<any> | string;

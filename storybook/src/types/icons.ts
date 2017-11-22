@@ -22,6 +22,7 @@ export type IconType =
   | 'edit'
   | 'ellipsis-h'
   | 'facebook'
+  | 'flag'
   | 'filter'
   | 'fire'
   | 'gamepad'
