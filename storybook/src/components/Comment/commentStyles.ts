@@ -12,7 +12,7 @@ const commentStyle = css`
   display: flex;
   padding: 30px;
   color: #555;
-  font-family: 'Noto Sans';
+  font-family: 'Roboto';
   letter-spacing: 1px;
 `;
 

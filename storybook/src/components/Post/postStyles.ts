@@ -5,7 +5,7 @@ const postWrapperStyle = css`
   height: auto;
   border: solid 2px #eee;
   border-radius: 5px;
-  font-family: 'Noto Sans';
+  font-family: 'Roboto';
   color: #555;
   letter-spacing: 1px;
 `;

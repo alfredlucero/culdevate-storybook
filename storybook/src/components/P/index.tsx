@@ -12,7 +12,7 @@ export interface PProps {
 const P = styled.p`
   color: #595959;
   font-size: ${(props:PProps) => props.small ? '0.6rem' : '1rem'};
-  font-family: 'Noto Sans';
+  font-family: 'Roboto';
   line-height: 1.5;
   letter-spacing: 1px;
 
