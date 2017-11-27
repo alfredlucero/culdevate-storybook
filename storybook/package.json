@@ -1,7 +1,7 @@
 {
   "name": "culdevate-storybook",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index",
   "description": "Storybook for Culdevate Reusable, Tested Components",
   "scripts": {
     "start": "yarn run storybook",
@@ -39,7 +39,9 @@
     "enzyme-to-json": "^3.2.1",
     "jest": "^21.2.1",
     "jest-styled-components": "^4.9.0",
+    "json-loader": "^0.5.7",
     "react-test-renderer": "^16.0.0",
+    "react-times": "^2.2.8",
     "regenerator-runtime": "^0.11.0",
     "ts-jest": "^21.1.4",
     "ts-loader": "^3.1.1",
