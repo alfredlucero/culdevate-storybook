@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as TimePicker from 'react-times';
+import TimePicker from 'react-times';
 
 // // use material theme
 import 'react-times/css/material/default.css';
@@ -30,7 +30,7 @@ export default class ReactTimePicker extends React.Component<any, any> {
 
   render() {
     return (
-        <TimePicker
+      <TimePicker
         onFocusChange={this.onFocusChange.bind(this)}
         onHourChange={this.onHourChange.bind(this)}
         onMinuteChange={this.onMinuteChange.bind(this)}

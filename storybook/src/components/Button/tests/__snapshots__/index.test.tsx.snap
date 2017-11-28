@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Button /> should render correctly 1`] = `
+.c0 {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  type="plaintext"
+/>
+`;
+
 exports[`<H1 /> should render correctly 1`] = `
 .c0 {
   color: #595959;

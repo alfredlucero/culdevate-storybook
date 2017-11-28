@@ -58,8 +58,11 @@
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
     "jest-cli": "^21.2.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "moment": "^2.19.2",
+    "react": "^16.1.1",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-dates": "^15.1.0",
+    "react-dom": "^16.1.1",
     "styled-components": "^2.2.3"
   },
   "jest": {

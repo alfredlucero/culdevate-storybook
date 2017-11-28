@@ -11,7 +11,6 @@ module.exports = function(config, env) {
     loader: 'awesome-typescript-loader'
   });
 
-
   config.resolve.extensions.push('.tsx');
   config.resolve.extensions.push('.ts');
   config.resolve.extensions.push('.js');
