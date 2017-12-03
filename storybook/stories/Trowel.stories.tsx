@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 import TrowelArtifact, { TrowelArtifactProps } from '../src/components/TrowelArtifact';
 import { ArtifactType } from '../src/types/artifacts';
 import TrowelDay from '../src/components/TrowelDay';
+import ProgressBar from '../src/components/ProgressBar';
 
 const artifactTypes = [
   'announcement',
@@ -69,5 +70,12 @@ stories.add('Trowel Day', () => (
       day="January 17, 2018"
       artifacts={(artifactTypes.map((artifactType:ArtifactType) => ({ id: "some-id", type: artifactType as ArtifactType, descr: `some artifact descr for ${artifactType}`, time: 'some time' }))) as TrowelArtifactProps[]}
     />
+  </div>
+));
+
+stories.add('Progress Bar', () => (
+  <div>
+    <h1 style={{ color: '#595959' }}>{`<ProgressBar progressPercentage={50} />`}</h1>
+    <ProgressBar progressPercentage={50} />
   </div>
 ));
