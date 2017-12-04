@@ -14,6 +14,7 @@ export type ColorType =
   | 'comment-gray-hovered'
   | 'default-gray-text'
   | 'light-gray-text'
+  | 'nav-gray'
   | 'white'
   | 'loading-green'
   | 'success-green'
@@ -37,6 +38,7 @@ const ColorMap = {
   'comment-gray-hovered': '#757575',
   'default-gray-text': '#595959',
   'light-gray-text': '#aaa',
+  'nav-gray': '#e5e5e5',
   'white': '#fff',
   'loading-green': '#d1eced',
   'success-green': '#2bad88',
