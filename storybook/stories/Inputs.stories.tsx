@@ -7,6 +7,8 @@ import 'react-dates/initialize';
 import DatePicker from '../src/components/DatePicker';
 import InputText from '../src/components/InputText';
 import InputTextArea from '../src/components/InputTextArea';
+import Checkbox from '../src/components/Checkbox';
+import RadioButton from  '../src/components/RadioButton';
 
 const stories = storiesOf('Inputs', module);
 
@@ -91,3 +93,19 @@ stories.add('InputTextArea', () => (
     />
   </div>
 ));
+
+stories.add('Checkbox', () => (
+  <div>
+    <h1 style={{ color: '#595959' }}>{`<Checkbox label="some-label" value="some-value" onChange={handleCheckboxChange} disabled? />`}</h1>
+    <Checkbox label="Frontend" value="frontend" onChange={(e) => console.log(e.target.value)} />
+    <Checkbox label="Disabled" value="disabled" onChange={(e) => console.log(e.target.value)} disabled />
+  </div>
+));
+
+stories.add('RadioButton', () => (
+  <div>
+    <h1 style={{ color: '#595959' }}>{`<RadioButton label="some-label" value="some-value" onChange={handleRadioButtonChange} checked={true} disabled? />`}</h1>
+    <RadioButton label="Frontend" value="frontend" checked={true} onChange={(e) => console.log(e.target.value)} />
+    <RadioButton label="Disabled" value="disabled" checked={false} onChange={(e) => console.log(e.target.value)} disabled />
+  </div>
+))
