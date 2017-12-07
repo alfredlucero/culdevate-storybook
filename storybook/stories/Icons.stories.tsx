@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 
 import Icon from '../src/components/Icon';
 import { IconType } from '../src/types/icons';
+import LoadingIcon from '../src/components/LoadingIcon';
 
 const icons = [
   'at',
@@ -86,5 +87,16 @@ stories.add('Font Awesome Icons To Use', () => (
         </div>
       );
     })}
+  </div>
+));
+
+stories.add('Loading Icon', () => (
+  <div>
+    <h1 style={{ color: '#595959' }}>{`<LoadingIcon size?="small | medium | large" />`}</h1>
+    <LoadingIcon size="small" />
+    <br/>
+    <LoadingIcon size="medium" />
+    <br/>
+    <LoadingIcon size="large" />
   </div>
 ));

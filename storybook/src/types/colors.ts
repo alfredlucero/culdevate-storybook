@@ -16,6 +16,7 @@ export type ColorType =
   | 'light-gray-text'
   | 'nav-gray'
   | 'white'
+  | 'loading-gray'
   | 'loading-green'
   | 'success-green'
   | 'failure-red'
@@ -40,6 +41,7 @@ const ColorMap = {
   'light-gray-text': '#aaa',
   'nav-gray': '#e5e5e5',
   'white': '#fff',
+  'loading-gray': '#f9f9f9',
   'loading-green': '#d1eced',
   'success-green': '#2bad88',
   'failure-red': '#fb8597',
